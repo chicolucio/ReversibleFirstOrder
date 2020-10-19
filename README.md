@@ -2,7 +2,9 @@
 
 ![reversible_gif](reversible_interactive.gif)
 
-A simple script to plot Concentration vs Time or Reaction quotient vs Time plots for reversible first order reactions. Interactive plots can also be made following [tutorial](tutorial.ipynb) instructions.
+A simple script to plot Concentration vs Time or Reaction quotient vs Time plots for reversible first order reactions. Interactive plots can also be made following [tutorial](tutorial.ipynb) instructions. An interactive Colab notebook can also be used <a href="https://colab.research.google.com/github/chicolucio/ReversibleFirstOrder/blob/main/colab/interactive_colab.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
  # Installation and requirements
 
@@ -12,7 +14,9 @@ Just clone or download this repo. This is not a package yet.
 
 # Usage
 
-See the [tutorial](tutorial.ipynb)
+See the [tutorial](tutorial.ipynb) <a href="https://colab.research.google.com/github/chicolucio/ReversibleFirstOrder/blob/main/colab/tutorial_colab.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 # Contributing
 
