@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 
 
 class ReversibleFirstOrder:
@@ -147,7 +148,18 @@ class ReversibleFirstOrder:
 
         self._plot_params(ax, time_unit, 'Concentration', concentration_unit, title, title_text)
 
-        ax.legend(loc='best', fontsize=14)
+        handles, labels = ax.get_legend_handles_labels()
+        patch_kf = mpatches.Patch(color='white', label=' '.join(['$k_f =$', f'{self.kf}']))
+        patch_kb = mpatches.Patch(color='white', label=' '.join(['$k_b =$', f'{self.kb}']))
+        patch_A0 = mpatches.Patch(color='white', label=' '.join(['$[A]_0 =$', f'{self.A0}']))
+        patch_BO = mpatches.Patch(color='white', label=' '.join(['$[B]_0 =$', f'{self.B0}']))
+
+        handles.extend([patch_A0, patch_BO, patch_kf, patch_kb])
+
+        xbbox = 0.5
+        ybbox = -0.15
+        ax.legend(handles=handles, loc='upper center', fontsize=14, shadow=True, fancybox=True,
+                  bbox_to_anchor=(xbbox, ybbox), ncol=len(handles), columnspacing=0.2)
 
         return ax
 
@@ -178,7 +190,7 @@ class ReversibleFirstOrder:
         if ax is None:
             fig, ax = plt.subplots(figsize=size, facecolor=(1.0, 1.0, 1.0))
 
-        ax.plot(self.t, self.reaction_quotient)
+        ax.plot(self.t, self.reaction_quotient, color='red')
 
         self._plot_params(ax, time_unit, q, '', title, title_text)
 
