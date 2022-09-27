@@ -246,3 +246,6 @@ class ReversibleFirstOrder:
         self._plot_params(ax, time_unit, q, "", title, title_text)
 
         return ax
+
+
+# TODO add Plotly methods
