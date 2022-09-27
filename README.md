@@ -2,21 +2,53 @@
 
 ![reversible_gif](reversible_interactive.gif)
 
-A simple script to plot Concentration vs Time or Reaction quotient vs Time plots for reversible first order reactions. Interactive plots can also be made following [tutorial](tutorial.ipynb) instructions. An interactive Colab notebook can also be used <a href="https://colab.research.google.com/github/chicolucio/ReversibleFirstOrder/blob/main/colab/interactive_colab.ipynb" target="_blank">
+Interactive web app:
+
+<p align="center">
+<a href="https://reversiblefirstorder.streamlitapp.com/" target="_blank">
+<img src="https://img.shields.io/badge/-Streamlit%20app-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="streamlit app badge"></a>
+</p>
+
+A simple project to plot Concentration vs Time or Reaction quotient vs Time plots for reversible first order reactions. Interactive plots can also be made following [tutorial](tutorial.ipynb) instructions. An interactive Colab notebook can also be used <a href="https://colab.research.google.com/github/chicolucio/ReversibleFirstOrder/blob/main/colab/interactive_colab.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
- # Installation and requirements
+ # Installation and usage
 
-This project relies mainly on [Matplotlib](https://numpy.org/) and [numpy](https://numpy.org/).
+1. clone the repo
+2. create a virtual environment
+3. activate the virtual environment
+4. install dependencies with [`requirements.txt`](requirements.txt)
+5. use the code and/or run a local Streamlit app
 
-Just clone or download this repo. This is not a package yet.
+```bash
+git clone git@github.com:chicolucio/ReversibleFirstOrder.git
+cd ReversibleFirstOrder
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run Home.py
+```
 
-# Usage
+These are the Python packages under the hood:
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3670A0.svg?style=plastic&logo=&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=plastic&logo=numpy&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?style=plastic&logo=streamlit&logoColor=white)
+
 
 See the [tutorial](tutorial.ipynb) <a href="https://colab.research.google.com/github/chicolucio/ReversibleFirstOrder/blob/main/colab/tutorial_colab.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+to know how to customize the plot and how to animate it like the gif at the top
+of this readme.
+
+Interactive web app hosted on Streamlit Cloud:
+
+<p align="center">
+<a href="https://reversiblefirstorder.streamlitapp.com/" target="_blank">
+<img src="https://img.shields.io/badge/-Streamlit%20app-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="streamlit app badge"></a>
+</p>
 
 # Contributing
 
