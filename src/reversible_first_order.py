@@ -96,9 +96,9 @@ class ReversibleFirstOrder:
 
         # grid and ticks settings
         ax.minorticks_on()
-        ax.grid(b=True, which="major", linestyle="--", linewidth=linewidth - 0.5)
+        ax.grid(which="major", linestyle="--", linewidth=linewidth - 0.5)
         ax.grid(
-            b=True, which="minor", axis="both", linestyle=":", linewidth=linewidth - 1
+            which="minor", axis="both", linestyle=":", linewidth=linewidth - 1
         )
         ax.tick_params(which="both", labelsize=size + 2)
         ax.tick_params(which="major", length=6, axis="both")
